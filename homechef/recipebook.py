@@ -13,6 +13,10 @@ class Recipebook:
         new_recipe.set_recipy()
         #레시피리스트에 생성한 레시피 추가
         self.recipe_liset.append(new_recipe)
+    def show_recipe(self):
+        for index, recipe in enumerate(self.recipr_list) :
+            print(f"{index+1}")
+            print(recipe)
 
     def __str__(self):
         pass
