@@ -31,7 +31,7 @@ class Recipe:
         self.set_ingredient()
         self.set_contents()
         self.set_video()
-카레 = Recipe("카레")
-카레.set_recipy()
-print(카레)
+# 카레 = Recipe("카레")
+# 카레.set_recipy()
+# print(카레)
 

@@ -25,3 +25,5 @@ def main():
             break
         else:
             print("잘못 입력하였습니다. \n 다시 입력하세요")
+if __name__ == '__main__':
+    main()
