@@ -1,3 +1,4 @@
+from recipebook import Recipebook
 def print_memu():
     print("1. 레시피 검색")
     print("2. 레시피 추가")
@@ -7,14 +8,14 @@ def print_memu():
     num = int(input("메뉴를 선택하세요 : "))
     return num
 def main():
+    recipebook = Recipebook()
     while True :
         num = print_memu()
         if num == 1 :
             # 레시피 검색
             return
         elif num == 2 :
-            #레시피 추가
-            return
+            recipebook.add_recipe() #레시피 추가
         elif num == 3 :
             #재료 검색
             return
