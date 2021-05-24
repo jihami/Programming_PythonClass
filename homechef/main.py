@@ -12,8 +12,7 @@ def main():
     while True :
         num = print_memu()
         if num == 1 :
-            # 레시피 검색
-            return
+            recipebook.search_recipe()# 레시피 검색
         elif num == 2 :
             recipebook.add_recipe() #레시피 추가
         elif num == 3 :
