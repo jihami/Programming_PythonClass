@@ -20,8 +20,7 @@ def main():
             #재료 검색
             return
         elif num == 4 :
-            #전체레시피 보여주기
-            return
+            recipebook.show_recipe() #전체레시피 보여주기
         elif num == 5 :
             #종료하기
             break
