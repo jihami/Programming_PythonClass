@@ -16,8 +16,7 @@ def main():
         elif num == 2 :
             recipebook.add_recipe() #레시피 추가
         elif num == 3 :
-            #재료 검색
-            return
+            recipebook.search_ingredient()#재료 검색
         elif num == 4 :
             recipebook.show_recipe() #전체레시피 보여주기
         elif num == 5 :
@@ -27,3 +26,4 @@ def main():
             print("잘못 입력하였습니다. \n 다시 입력하세요")
 if __name__ == '__main__':
     main()
+

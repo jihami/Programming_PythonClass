@@ -34,6 +34,17 @@ class Recipebook:
             else:
                 return
 
-
+    def search_ingredient(self):#재료로 해당하는 레시피 찾기
+        all_ingredient = set() # 빈 셋(set) 생성 -> 제로를 중복 제거해서 담은 셋(set
+        for recipe in self.recipe_list : # 레시피 북에 잇는 레시피 재료를 셋에넣음  한개는 add 두 개씩 쓸때는 update
+            for ingredient in recipe.ingredient:
+                all_ingredient.add(ingredient)
+        for index, ingredient in enumerate(all_ingredient) : # 모든 재료 보여줌
+            print(f"{index+1} : {ingredient}")
+        search_num = int(input('사용할 재료 입력 : '))#찾을 재료 검색(입력 받음)
+        search_ingredient =list (all_ingredient)[search_num-1]
+        for recipe in self.recipe_list: #레시피 리스트의 레시피 -> 레시피의 재료를 살펴보자
+            if search_ingredient in recipe.ingredient:        # 입력한 재료가 포함되면
+                print(recipe)    # 레시피 모두 보여줌
     def __str__(self):
         pass
