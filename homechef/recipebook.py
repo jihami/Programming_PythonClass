@@ -52,12 +52,15 @@ class Recipebook:
         떡볶이.people = 2
         떡볶이.video = "알아서 봐라"
         떡볶이.ingredient = {"떡":"200", "고추장":"100", "어묵":"100", "양파":"300","물":"100"}
+        self.recipe_list.append(떡볶이)
         카레 = Recipe("카레")
         카레.people = 2
         카레.video = "고에스더 나락"
         카레.ingredient = {"카레가루":"100","감자":"3"}
+        self.recipe_list.append(카레)
         파스타 = Recipe("파스타")
         파스타.video = "나도 파스타 무글랭"
         파스타.ingredient = {"면":"200","소스":"400"}
+        self.recipe_list.append(파스타)
     def __str__(self):
         pass
