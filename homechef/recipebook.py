@@ -3,6 +3,7 @@ from recipe import Recipe
 class Recipebook:
     def __init__(self):
         self.recipe_list = []
+        self.init_recipe()
 
     def add_recipe(self):
         name = input("레시피 이름 입력 : ")  # 추가할 레시피 입력 입력 받음
@@ -46,5 +47,17 @@ class Recipebook:
         for recipe in self.recipe_list: #레시피 리스트의 레시피 -> 레시피의 재료를 살펴보자
             if search_ingredient in recipe.ingredient:        # 입력한 재료가 포함되면
                 print(recipe)    # 레시피 모두 보여줌
+    def init_recipe(self):
+        떡볶이 = Recipe("떡볶이")
+        떡볶이.people = 2
+        떡볶이.video = "알아서 봐라"
+        떡볶이.ingredient = {"떡":"200", "고추장":"100", "어묵":"100", "양파":"300","물":"100"}
+        카레 = Recipe("카레")
+        카레.people = 2
+        카레.video = "고에스더 나락"
+        카레.ingredient = {"카레가루":"100","감자":"3"}
+        파스타 = Recipe("파스타")
+        파스타.video = "나도 파스타 무글랭"
+        파스타.ingredient = {"면":"200","소스":"400"}
     def __str__(self):
         pass
