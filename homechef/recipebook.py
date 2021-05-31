@@ -63,4 +63,4 @@ class Recipebook:
         파스타.ingredient = {"면":"200","소스":"400"}
         self.recipe_list.append(파스타)
     def __str__(self):
-        pass //안써도 ㄱㅊ
+        pass #안써도 ㄱㅊ
