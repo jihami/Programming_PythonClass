@@ -13,7 +13,7 @@ class Icecream:
 요거트31.set_explanation("유산균이 살아 있는 오리지널 요거트 아이스크림")
 초콜릿무스 = Icecream("초콜릿무스")
 초콜릿무스.set_explanation("초콜릿 칩이 들어있는 진한 초콜릿 아이스크림")
-베리베리스트로베리 = Icecream("베리베리스트로베리")
+베리베리스트로베리 = Icecream("베리베리스트로베리" )
 베리베리스트로베리.set_explanation("새콤상큼 딸기 과육이 듬뿍!")
 
 class Order:
