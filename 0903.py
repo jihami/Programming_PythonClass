@@ -91,3 +91,20 @@ if my_bd < now :
     my_bd = my_bd.replace(year=2022)
     # my_bd.year += my_bd..year+1  -> 에러 is not writable 맘대로 값 못바꾼대
 print(my_bd-now)
+
+#8 랜덤하게 번호로 자리 배치 하기 (전학, 자퇴)
+
+# 마지막 번호 입력 받기
+last_number = input("마지막 번호 : ")
+# 1~마지막 번호 리스트 생성
+list_class = list(range(1, int(last_number)+1))
+# 반복
+while True:
+    exclude_number = input("제외 할 번호(entet->제외안함) : ")#   뺄 번호 묻기
+    if  exclude_number == " ":#   반복하기
+        break
+    list_class.remove(int(exclude_number))#   빼기
+    random.shuffle(list_class)# 섞기
+    print("자리\t학생번호")
+    for i, number in enumerate(list_class):# 출력하기
+        print(f"{i+1}\t{number}")
