@@ -54,12 +54,12 @@ def ran():
 ran()
 
 #정훈쌤
-list_r = random.sample((range(1, 9 + 1), 3))
+list_r = random.sample(range(1, 9 + 1), 3)
 print(list_r)
 # print(str(list_r)) -> 리스트 그대로 출력
 print("".join(str(n) for n in list_r)) #for문을 사요앻서 하나씩 뽑아와서 조인함
 # join -> 문자열로 합칠때 사용
-
+print("".join(map(str, list_r))) #위에랑 같은 뜻
 
 #5
 def birthday():
