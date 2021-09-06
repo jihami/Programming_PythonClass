@@ -2,6 +2,11 @@ import math
 import random
 import datetime
 
+#1
+def pay(mon):
+    pay = math.trunc(mon/100) *100
+    print(pay)
+pay(59827)
 
 #2
 def score(num):
@@ -45,3 +50,11 @@ def chri():
     day = chr-today
     print(day)
 chri()
+
+#7
+# def day():
+#     birthday = datetime.date(2022, 8, 25)
+#     now = datetime.datetime.now()
+#     bday=birthday-now
+#     print(bday)
+# day()
