@@ -8,6 +8,14 @@ def pay(mon):
     print(pay)
 pay(59827)
 
+#정훈쌤
+bill = 59827
+print(bill//100*100)
+print(bill-bill%100)
+print(math.floor(bill/100)*100)
+print(int(bill/100)*100)
+
+
 #2
 def score(num):
     score=(math.trunc(num/10)*10)
