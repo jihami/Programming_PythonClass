@@ -4,7 +4,7 @@ import datetime
 
 #1
 def pay(mon):
-    pay = math.trunc(mon/100) *100
+    pay = math.trunc(mon/100) *100 #버림 함수
     print(pay)
 pay(59827)
 
@@ -22,6 +22,13 @@ def score(num):
     print(score)
 score(56)
 
+#정훈쌤
+score = 93
+score = 56
+print(round(score/10)*10)
+print(round(score, -1))
+
+
 #3
 def rotto():
     numList = []
@@ -30,6 +37,9 @@ def rotto():
         numList.append(num)
     print(numList)
 rotto()
+
+#정훈쌤
+print(random.sample(range(1, 45 + 1), 6))
 
 #4
 def ran():
@@ -42,6 +52,14 @@ def ran():
             break
     print(numList)
 ran()
+
+#정훈쌤
+list_r = random.sample((range(1, 9 + 1), 3))
+print(list_r)
+# print(str(list_r)) -> 리스트 그대로 출력
+print("".join(str(n) for n in list_r)) #for문을 사요앻서 하나씩 뽑아와서 조인함
+# join -> 문자열로 합칠때 사용
+
 
 #5
 def birthday():
