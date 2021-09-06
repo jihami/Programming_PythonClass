@@ -61,6 +61,7 @@ print("".join(str(n) for n in list_r)) #for문을 사요앻서 하나씩 뽑아�
 # join -> 문자열로 합칠때 사용
 print("".join(map(str, list_r))) #위에랑 같은 뜻
 
+
 #5
 def birthday():
     birthday = datetime.date(2004,8, 25)
@@ -68,6 +69,10 @@ def birthday():
     birthtotoday=today-birthday
     print(birthtotoday)
 birthday()
+
+birthd = datetime.datetime(2004,8,25)
+now = datetime.datetime.now()
+print(now - birthd)
 
 #6
 def chri():
@@ -77,10 +82,12 @@ def chri():
     print(day)
 chri()
 
+christmas = datetime.datetime(2021,12,25)
+print(christmas - now)
+
 #7
-# def day():
-#     birthday = datetime.date(2022, 8, 25)
-#     now = datetime.datetime.now()
-#     bday=birthday-now
-#     print(bday)
-# day()
+my_bd = datetime.datetime(2021,8,25)
+if my_bd < now :
+    my_bd = my_bd.replace(year=2022)
+    # my_bd.year += my_bd..year+1  -> 에러 is not writable 맘대로 값 못바꾼대
+print(my_bd-now)
