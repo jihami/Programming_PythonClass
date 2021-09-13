@@ -6,6 +6,9 @@ answer = make_answer()
 while True:
     # 질문
     guess = input('예상 숫자 : ')
+    # 숫자인지 확인
+    guess_int = int(guess)
+    print(guess_int)
     # 결과 판정
     strike, ball = check(guess, answer)
     # 출력
