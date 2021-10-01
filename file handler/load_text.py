@@ -3,6 +3,13 @@ f = open("text.txt", "r", encoding="utf-8")
 data = f.read()
 f.close()
 print(data)
+
+
+with open("text.txt", "r", encoding="utf-8"):
+    data = f.read()
+print(data)
+
+
 print("한줄씩 읽기")
 f = open("text.txt", "r", encoding="utf-8")
 # line = f.readline() #line : 다빈보라\n 이 들어 잇음 -> textㅎ파일에 있는거임
