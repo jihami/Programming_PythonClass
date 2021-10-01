@@ -11,7 +11,7 @@ f = open("text.txt", "r", encoding="utf-8")
 # print(line)
 
 while True:
-    line = f.read() #line : 다빈보라\n
+    line = f.read() #line : 다빈보라 \n
     if line == "" : #빈칸이라면 끝나라
         break
     print(line.rstrip()) #line.replace("\n","")
