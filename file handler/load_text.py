@@ -31,4 +31,7 @@ f = open("text.txt", "r", encoding="utf-8")
 lines = f.readlines()
 f.close()
 for line in lines:
-    print("이름 : "+line.rstrip()[:3]+ "\t 좋아하는 색 : "+line.rstrip()[4:])
+    #크리스찬:"검정색"
+    data = line.split(":") #["고에스터","검은색"]
+    # print("이름 : "+line.rstrip()[:3]+ "\t 좋아하는 색 : "+line.rstrip()[4:])
+    print("이름 : "+data[0].rstrip() +  "\t 좋아하는 색 : "+data[1].rstrip())
