@@ -12,7 +12,6 @@ class TicTacTocGameEngine:
             print(v+"  ", end="") #end="" 끝나도 내려쓰기 x
             if i % 3 == 2:
                 print()
-                print("===========")
 
     def set(self, row, col):
         #self.borad에 위치에다가 => self.turn
@@ -47,6 +46,8 @@ class TicTacTocGameEngine:
             == self.board([self.position_to_index(3, 3)]) \
             == self.turn:  # self.turn => X
             return "-"
+        if not '.' in self.board:
+            return 'd'  # draw
         '''#우리
         #- 3줄 : 1,2,3 | 4,5,6 | 7,8,9 실제 인덱스 -> 1,2,3 | 3,4,5 | 6,7,8
         for i in range(0, 7):
