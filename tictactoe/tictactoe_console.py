@@ -40,4 +40,5 @@ if __name__ == '__main__':
 #  set row, col
 #  show board
 #  set winner?
-#  승자가 있으면, 끝
+#  승자가 있으면, 끝내고 출력하자
+#  change turn
