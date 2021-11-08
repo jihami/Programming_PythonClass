@@ -2,6 +2,7 @@ class TictactoeGameEngine:
     def __init__(self):
         self.board = list('.' * 9)  # ['.','.','.','.','.','.','.','.','.']
         self.turn = 'X'
+        self.SIZE = 3
 
     def show_board(self):  # 김유임 임사랑
         # print('  '.join(self.board[0:3]))   #'  '.join(['.', '.', '.']): '.  .  .'
