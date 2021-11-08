@@ -1,4 +1,4 @@
-class TicTacTocGameEngine:
+class TictactoeGameEngine:
     def __init__(self):
         self.board=list("."*9)         #[".",".",".",".",".",".",".",".","."]
         self.turn = "X"
@@ -81,7 +81,7 @@ class TicTacTocGameEngine:
     def change_turn(self):
         self.turn == "O" if self.turn == "X" else "X"
 if __name__ == "__main__":
-    game_engine = TicTacTocGameEngine()
+    game_engine = TictactoeGameEngine()
     game_engine.show_board()
     game_engine.set(2, 2)    # ....\n...\n...
     game_engine.show_board()    #[".",".",".",".",".",".",".",".","."]
